@@ -121,6 +121,18 @@ console.log(whoIsBigger(4, 10));
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+const isThisAnEmail = function (mailSearch) {
+  Req = mailSearch.includes("@");
+  if (Req === true) {
+    Req = true;
+  } else {
+    Req = false;
+  }
+  return Req;
+};
+console.log("ESERCIZIO 6");
+console.log(isThisAnEmail("gianni.bascetta@gmail.com"));
+
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
@@ -154,7 +166,7 @@ const whatDayIsIt = function () {
   }
   return todayIs;
 };
-
+console.log("ESERCIZIO 7");
 console.log(whatDayIsIt());
 
 /* ESERCIZIO 8
